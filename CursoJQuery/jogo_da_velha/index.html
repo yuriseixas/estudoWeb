@@ -1,13 +1,113 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
 
-		<title>Jogo da velha</title>
-		<script src="jquery-2.2.1.js"></script>
-	</head>
+<head>
+    <meta charset="UTF-8">
 
-	<body>
+    <title>Jogo da velha</title>
+    <script src="jquery-2.2.1.js"></script>
+</head>
 
-	</body>
+<body>
+    <div id="pagina_inicial" align="center">
+        <table border="0" style="width: 600px;">
+            <tbody>
+                <tr>
+                    <td colspan="3" align="center">
+                        JOGO DA VELHA
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <img src="imagens/jogador_1.png" />
+                        <br />
+                        <input type="text" maxlength="10" placeholder="Jogador 1" style="border: 0px; text-align: center;" />
+                    </td>
+
+                    <td align="center">
+                        <img src="imagens/iniciar.png" />
+                    </td>
+
+                    <td align="center">
+                        <img src="imagens/jogador_2.png" />
+                        <br />
+                        <input type="text" maxlength="10" placeholder="Jogador 2" style="border: 0px; text-align: center;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="palco_jogo" style="margin-top: 50px;text-align: center;">
+        <div style="display: inline-block;">
+            <img src="imagens/jogador_1.png">
+        </div>
+
+        <div style="display: inline-block;">
+            <table border="0">
+                <tr>
+                    <td style="border-bottom: solid 1px red; border-right: 1px red solid;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                    <td style="border-bottom: solid 1px red; border-right: 1px red solid; border-left: 1px solid red;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                    <td style="border-bottom: solid 1px red; border-left: solid red 1px;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td style="border-bottom: solid 1px red; border-right: 1px red solid; border-top: solid red 1px;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                    <td style="border-bottom: solid 1px red; border-right: 1px red solid; border-top: red solid 1px; border-left: 1px solid red;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                    <td style="border-left: 1px red solid; border-top: 1px solid red; border-bottom: solid red 1px;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td style="border-right: 1px red solid; border-top: solid red 1px;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                    <td style="border-left: red 1px solid; border-top: 1px solid red; border-right: 1px solid red;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                    <td style="border-left: 1px red solid; border-top: red 1px solid;">
+                        <div style="width: 100px; height: 100px;">
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="display: inline-block;">
+            <img src="imagens/jogador_2.png">
+        </div>
+    </div>
+</body>
+
 </html>
