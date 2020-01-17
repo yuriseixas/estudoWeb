@@ -1,0 +1,9 @@
+version: '3'
+services:
+  yuri_php:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    volumes:
+      - .:/usr/local/apache2/htdocs/
+    restart: unless-stopped

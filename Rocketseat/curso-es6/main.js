@@ -1,26 +1,7 @@
-class List {
-    constructor(){
-        this.data = [];
-    }
-
-    add(data){
-        this.data.push(data);
+class Matematica{
+    static soma(a, b){
+        return a * b;
     }
 }
 
-class TodoList extends List {
-    constructor(){
-        this.todos = [];
-    }
-
-    addTodo(){
-        this.todos.push('Novo todo');
-        console.log(this.todos);
-    }
-}
-
-const minhaLista = new TodoList();
-
-document.getElementById('novotodo').onclick = function(){
-    minhaLista.addTodo();
-}
+console.log(Matematica.soma(6, 4));
