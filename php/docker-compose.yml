@@ -1,9 +1,13 @@
 version: '3'
 services:
-  yuri_php:
+  yuri_teste:
+    container_name: yuri_teste
+    hostname: yuri_teste_host
     build:
-      dockerfile: Dockerfile
+      dockerfile: .docker/Dockerfile
       context: ./
+    ports:
+      - 8080:80
     volumes:
-      - .:/usr/local/apache2/htdocs/
+      - ./htdocs:/var/www/html/
     restart: unless-stopped
